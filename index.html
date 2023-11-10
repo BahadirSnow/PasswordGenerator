@@ -1,0 +1,24 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="main-box">
+            <h1 id="title">Generate a <br><span id="title-color">random password</span></h1>
+            <h2 id="support-title">Never use an insecure password again</h2>
+            <div class="slidecontainer">
+                Password Length: 
+                <input type="range" min="10" max="35" value="15" class="length-slider" id="myRange"> <span id="length"></span>
+            </div>
+            <div id="generate-box">
+                <button id="generate-button" onclick="randomPassword()">Generate Password</button>
+            </div>
+            <hr>
+            <div id="output-box">
+                <div class="output-content" id="first-pass"></div>
+                <div class="output-content" id="second-pass"></div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
